@@ -1,0 +1,1 @@
+web: linda -c $LINDA_CONFIG_FILE
