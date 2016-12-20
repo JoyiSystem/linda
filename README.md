@@ -17,7 +17,6 @@ Navigation:
 1. [Installation](#installation)
 1. [Configuration](#configuration)
 1. [Deployment](#deployment)
-	1. [Docker](#docker)
 	1. [Heroku](#heroku)
 1. [Credits](#credits)
 
