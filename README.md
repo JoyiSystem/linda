@@ -68,16 +68,8 @@ Build and run:
 ## Configuration
 
 * See [linda.example.toml](linda.example.toml) for configuration example.
-* Detailed explanation for each option available on [wiki](https://github.com/kpashka/linda/wiki/Configuration).
 
 ## Deployment
-
-### Docker
-
-Use the automated build from [Docker Registry](https://registry.hub.docker.com/u/kpashka/linda).
-
-	$ docker pull kpashka/linda
-	$ docker run -e "LINDA_CONFIG=<url_of_your_configuration_file>" kpashka/linda
 
 ### Heroku
 
