@@ -31,7 +31,7 @@
 		},
 		{
 			"ImportPath": "github.com/kpashka/slack",
-			"Rev": "98192ca2f51dea68287643f781ab236e0f7a7d02"
+			"Rev": "2d674d97a96cc4a712413109a6bb25796e1262b6"
 		},
 		{
 			"ImportPath": "github.com/tucnak/telebot",
