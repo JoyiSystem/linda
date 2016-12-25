@@ -92,7 +92,7 @@ func (linda *Linda) Start() {
 	linda.init()
 
 	// Custom branch test
-	fmt.Println("This is custom branch test...")
+	log.Println("!!! This is custom branch test...")
 
 	// Init backend
 	err := linda.adapter.Init()
