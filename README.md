@@ -1,6 +1,6 @@
 # Linda
 
-[![Build Status](https://travis-ci.org/kpashka/linda.svg?branch=master)](https://travis-ci.org/kpashka/linda) [![GoDoc](https://godoc.org/github.com/kpashka/linda?status.svg)](https://godoc.org/github.com/kpashka/linda)
+[![Build Status](https://travis-ci.org/kpashka/linda.svg)](https://travis-ci.org/kpashka/linda) [![GoDoc](https://godoc.org/github.com/kpashka/linda?status.svg)](https://godoc.org/github.com/kpashka/linda)
 
 Multi-platform, highly configurable conference bot.
 
@@ -17,6 +17,7 @@ Navigation:
 1. [Installation](#installation)
 1. [Configuration](#configuration)
 1. [Deployment](#deployment)
+	1. [Docker](#docker)
 	1. [Heroku](#heroku)
 1. [Credits](#credits)
 
@@ -70,9 +71,12 @@ Build and run:
 
 ## Deployment
 
-### Heroku
+### Docker
 
-[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/kpashka/linda)
+Use the automated build from [Docker Registry](https://registry.hub.docker.com/u/kpashka/linda).
+
+	$ docker pull quay.io/kpashka/linda
+	$ docker run -e "LINDA_CONFIG=<url_of_your_configuration_file>" quay.io/kpashka/linda
 
 ## Credits
 
