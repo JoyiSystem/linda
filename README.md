@@ -1,6 +1,6 @@
 # Linda
 
-[![Build Status](https://travis-ci.org/kpashka/linda.svg)](https://travis-ci.org/kpashka/linda) [![GoDoc](https://godoc.org/github.com/kpashka/linda?status.svg)](https://godoc.org/github.com/kpashka/linda)
+[![Build Status](https://travis-ci.org/kpashka/linda.svg)](https://travis-ci.org/kpashka/linda) [![GoDoc](https://godoc.org/github.com/kpashka/linda?status.svg)](https://godoc.org/github.com/kpashka/linda) [![Docker Repository on Quay](https://quay.io/repository/kpashka/linda/status "Docker Repository on Quay")](https://quay.io/repository/kpashka/linda)
 
 Multi-platform, highly configurable conference bot.
 
