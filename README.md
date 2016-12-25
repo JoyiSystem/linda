@@ -1,6 +1,6 @@
 # Linda
 
-[![Build Status](https://travis-ci.org/kpashka/linda.svg?branch=master)](https://travis-ci.org/kpashka/linda) [![GoDoc](https://godoc.org/github.com/kpashka/linda?status.svg)](https://godoc.org/github.com/kpashka/linda)
+[![Build Status](https://travis-ci.org/kpashka/linda.svg)](https://travis-ci.org/kpashka/linda) [![GoDoc](https://godoc.org/github.com/kpashka/linda?status.svg)](https://godoc.org/github.com/kpashka/linda) [![Docker Repository on Quay](https://quay.io/repository/kpashka/linda/status "Docker Repository on Quay")](https://quay.io/repository/kpashka/linda)
 
 Multi-platform, highly configurable conference bot.
 
@@ -14,10 +14,9 @@ Navigation:
 
 1. [Features](#features)
 1. [Limitations](#limitations)
-1. [Installation](#installation)
 1. [Configuration](#configuration)
-1. [Deployment](#deployment)
-	1. [Heroku](#heroku)
+1. [Installation](#installation)
+1. [Docker](#docker)
 1. [Credits](#credits)
 
 ## Features
@@ -53,6 +52,10 @@ Because of the fact that different chat services have different protocols and av
 | Greetings & farewells                 | :white_check_mark: Supported             | :x: (Possible, but not yet implemented)        |
 | Status change reactions               | :white_check_mark: Supported             | :x: (Possible, but not yet implemented)        |
 
+## Configuration
+
+* See [linda.example.toml](linda.example.toml) for configuration example.
+
 ## Installation
 
 Install [godep](https://github.com/tools/godep) tool.
@@ -64,15 +67,12 @@ Build and run:
 	$ godep restore
 	$ go build && ./linda -c <path_to_your_configuration_file>
 
-## Configuration
+## Docker
 
-* See [linda.example.toml](linda.example.toml) for configuration example.
+Use the automated build from [Docker Registry](https://quay.io/repository/kpashka/linda).
 
-## Deployment
-
-### Heroku
-
-[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/kpashka/linda)
+	$ make pull
+	$ LINDA_CONFIG=<URL_to_your_configuration_file> make up
 
 ## Credits
 
