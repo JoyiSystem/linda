@@ -14,11 +14,9 @@ Navigation:
 
 1. [Features](#features)
 1. [Limitations](#limitations)
-1. [Installation](#installation)
 1. [Configuration](#configuration)
-1. [Deployment](#deployment)
-	1. [Docker](#docker)
-	1. [Heroku](#heroku)
+1. [Installation](#installation)
+1. [Docker](#docker)
 1. [Credits](#credits)
 
 ## Features
@@ -54,6 +52,10 @@ Because of the fact that different chat services have different protocols and av
 | Greetings & farewells                 | :white_check_mark: Supported             | :x: (Possible, but not yet implemented)        |
 | Status change reactions               | :white_check_mark: Supported             | :x: (Possible, but not yet implemented)        |
 
+## Configuration
+
+* See [linda.example.toml](linda.example.toml) for configuration example.
+
 ## Installation
 
 Install [godep](https://github.com/tools/godep) tool.
@@ -65,18 +67,12 @@ Build and run:
 	$ godep restore
 	$ go build && ./linda -c <path_to_your_configuration_file>
 
-## Configuration
+## Docker
 
-* See [linda.example.toml](linda.example.toml) for configuration example.
-
-## Deployment
-
-### Docker
-
-Use the automated build from [Docker Registry](https://registry.hub.docker.com/u/kpashka/linda).
+Use the automated build from [Docker Registry](https://quay.io/repository/kpashka/linda).
 
 	$ docker pull quay.io/kpashka/linda
-	$ docker run -e "LINDA_CONFIG=<url_of_your_configuration_file>" quay.io/kpashka/linda
+	$ docker run -e "LINDA_CONFIG=<URL_of_your_configuration_file>" quay.io/kpashka/linda
 
 ## Credits
 
