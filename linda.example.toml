@@ -45,7 +45,7 @@ channel = "general"
     # Proxy translator
     [commands.translate]
     type           = "proxy"
-    description    = "Translates input text. Usage `!translate <from>:<to> <input>"
+    description    = "Translates input text. Usage `!translate <from>:<to> <input>`"
     expression     = "(?i)!translate (.*):(.*) (.*)"
     url            = "http://mymemory.translated.net/api/get?q=$3&langpair=$1|$2"
     response       = "Translation: {{.result}}"
@@ -56,7 +56,7 @@ channel = "general"
     # Proxy random wikipedia page
     [commands.random]
     type           = "proxy"
-    description    = "Fetches random wiki page. Usage `!random <language>"
+    description    = "Fetches random wiki page. Usage `!random <language>`"
     expression     = "(?i)!random (.*)"
     url            = "https://$1.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=info&inprop=url&format=json"
     response       = "Read more about {{.title}} at {{.link | query_unescape }}"
@@ -68,7 +68,7 @@ channel = "general"
     # Proxy weathers
     [commands.weather]
     type           = "proxy"
-    description    = "Fetches weather by location. Usage `!weather <location>"
+    description    = "Fetches weather by location. Usage `!weather <location>`"
     expression     = "(?i)!weather (.*)"
     filters        = [[], ["translit"]]
     url            = "http://api.openweathermap.org/data/2.5/weather?q=$1&lang=en&units=metric"
