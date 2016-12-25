@@ -91,9 +91,6 @@ func (linda *Linda) Start() {
 	// Init linda
 	linda.init()
 
-	// Custom branch test
-	log.Println("!!! This is custom branch test...")
-
 	// Init backend
 	err := linda.adapter.Init()
 	if err != nil {
