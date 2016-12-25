@@ -71,8 +71,8 @@ Build and run:
 
 Use the automated build from [Docker Registry](https://quay.io/repository/kpashka/linda).
 
-	$ docker pull quay.io/kpashka/linda
-	$ docker run -e "LINDA_CONFIG=<URL_of_your_configuration_file>" quay.io/kpashka/linda
+	$ make pull
+	$ LINDA_CONFIG=<URL_to_your_configuration_file> make up
 
 ## Credits
 

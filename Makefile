@@ -1,7 +1,17 @@
-pull:
-	docker pull quay.io/kpashka/linda
+REPO ?= quay.io/kpashka/linda
+BRANCH ?= latest
+PORT ?= 8080
+
+build:
+	go build -o ./linda
 
 run:
-	docker run -it -p 8080:8080 -e "LINDA_CONFIG=$(LINDA_CONFIG)" quay.io/kpashka/linda
+	./linda -c $(LINDA_CONFIG)
 
-.PHONY: pull run
+pull:
+	docker pull $(REPO):$(BRANCH)
+
+up:
+	docker run -it -p $(PORT):$(PORT) -e "LINDA_CONFIG=$(LINDA_CONFIG)" $(REPO):$(BRANCH)
+
+.PHONY: build run pull run
