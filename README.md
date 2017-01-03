@@ -7,7 +7,7 @@ Multi-platform, highly configurable conference bot.
 Example usage:
 
 <p align="center">
-	<img src="http://i.imgur.com/cDKo8FA.png">
+	<img src="https://raw.github.com/kpashka/linda/master/static/example.png">
 </p>
 
 Navigation:
