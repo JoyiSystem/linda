@@ -1,0 +1,24 @@
+package: github.com/kpashka/linda
+import:
+- package: github.com/BurntSushi/toml
+  version: 056c9bc7be7190eaa7715723883caffa5f8fa3e4
+- package: github.com/NodePrime/jsonpath
+  version: 84403ded544328c99be3472727667179eef23a91
+- package: github.com/Sirupsen/logrus
+  version: 07d998d174c4e2dc90e2f1989a20724220bca1ff
+- package: github.com/fiam/gounidecode
+  version: 8deddbd03fec2c28969266e52f27b6fb22be1823
+  subpackages:
+  - unidecode
+- package: github.com/jteeuwen/go-pkg-rss
+  version: 5576b8d83ed75cbb4bc43ef18c07414f880b3472
+- package: github.com/jteeuwen/go-pkg-xmlx
+  version: cf505b97c711dd1c5a4682f68ea04dd35e385b8f
+- package: github.com/kpashka/slack
+  version: 2d674d97a96cc4a712413109a6bb25796e1262b6
+- package: github.com/tucnak/telebot
+  version: 40c91ee0b4c635ca2f520c54617306092cabb845
+- package: golang.org/x/net
+  version: d9558e5c97f85372afee28cf2b6059d7d3818919
+  subpackages:
+  - websocket
