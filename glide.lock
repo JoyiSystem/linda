@@ -1,0 +1,26 @@
+hash: 8e80d6a9c5dfb171181d9716cc10048f38610e31c0405a6034d51b006ea48385
+updated: 2017-01-04T09:58:21.53074628+07:00
+imports:
+- name: github.com/BurntSushi/toml
+  version: 056c9bc7be7190eaa7715723883caffa5f8fa3e4
+- name: github.com/fiam/gounidecode
+  version: 8deddbd03fec2c28969266e52f27b6fb22be1823
+  subpackages:
+  - unidecode
+- name: github.com/jteeuwen/go-pkg-rss
+  version: 5576b8d83ed75cbb4bc43ef18c07414f880b3472
+- name: github.com/jteeuwen/go-pkg-xmlx
+  version: cf505b97c711dd1c5a4682f68ea04dd35e385b8f
+- name: github.com/kpashka/slack
+  version: 2d674d97a96cc4a712413109a6bb25796e1262b6
+- name: github.com/NodePrime/jsonpath
+  version: 84403ded544328c99be3472727667179eef23a91
+- name: github.com/Sirupsen/logrus
+  version: 07d998d174c4e2dc90e2f1989a20724220bca1ff
+- name: github.com/tucnak/telebot
+  version: 40c91ee0b4c635ca2f520c54617306092cabb845
+- name: golang.org/x/net
+  version: d9558e5c97f85372afee28cf2b6059d7d3818919
+  subpackages:
+  - websocket
+testImports: []

@@ -17,7 +17,6 @@ Navigation:
 1. [Configuration](#configuration)
 1. [Installation](#installation)
 1. [Docker](#docker)
-1. [Credits](#credits)
 
 ## Features
 
@@ -58,14 +57,15 @@ Because of the fact that different chat services have different protocols and av
 
 ## Installation
 
-Install [godep](https://github.com/tools/godep) tool.
+Install [glide](https://github.com/Masterminds/glide) tool.
 
 Build and run:
 
 	$ go get https://github.com/kpashka/linda
 	$ cd $GOPATH/src/github.com/kpashka/linda
-	$ godep restore
-	$ go build && ./linda -c <path_to_your_configuration_file>
+	$ make install
+	$ export LINDA_CONFIG=<path_or_url_to_your_configuration_file>
+	$ make run
 
 ## Docker
 
@@ -73,14 +73,3 @@ Use the automated build from [Docker Registry](https://quay.io/repository/kpashk
 
 	$ make pull
 	$ LINDA_CONFIG=<URL_to_your_configuration_file> make up
-
-## Credits
-
-* [BurntSushi/toml](https://github.com/BurntSushi/toml)
-* [fiam/gounidecode](https://github.com/fiam/gounidecode)
-* [jteeuwen/go-pkg-rss](https://github.com/jteeuwen/go-pkg-rss)
-* [nlopes/slack](https://github.com/nlopes/slack)
-* [NodePrime/jsonpath](https://github.com/NodePrime/jsonpath)
-* [Sirupsen/logrus](https://github.com/Sirupsen/logrus)
-* [tools/godep](https://github.com/tools/godep)
-* [tucnak/telebot](https://github.com/tucnak/telebot)
