@@ -61,15 +61,13 @@ Install [glide](https://github.com/Masterminds/glide) tool.
 
 Build and run:
 
-	$ go get https://github.com/kpashka/linda
-	$ cd $GOPATH/src/github.com/kpashka/linda
-	$ make install
+	$ go get github.com/kpashka/linda
 	$ export LINDA_CONFIG=<path_or_url_to_your_configuration_file>
-	$ make run
+	$ linda -c $LINDA_CONFIG
 
 ## Docker
 
 Use the automated build from [Docker Registry](https://quay.io/repository/kpashka/linda).
 
 	$ make pull
-	$ LINDA_CONFIG=<URL_to_your_configuration_file> make up
+	$ LINDA_CONFIG=<url_to_your_configuration_file> make up
