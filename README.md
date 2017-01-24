@@ -8,7 +8,7 @@ Multi-platform, highly configurable conference bot.
 Example usage:
 
 <p align="center">
-	<img src="https://raw.github.com/kpashka/linda/master/static/example.png">
+	<img src="https://raw.github.com/kpashka/linda/master/static/example.png" width="638" height="689">
 </p>
 
 Navigation:
