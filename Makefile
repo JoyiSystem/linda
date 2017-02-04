@@ -9,6 +9,9 @@ build:
 	glide install
 	go build -o ./linda
 
+docker:
+	docker build . -t linda
+
 run:
 	./linda -c $(LINDA_CONFIG)
 
@@ -18,4 +21,4 @@ pull:
 up:
 	docker run -it -p $(PORT):$(PORT) -e "LINDA_CONFIG=$(LINDA_CONFIG)" $(REPO):$(BRANCH)
 
-.PHONY: build clean run pull run
+.PHONY: build clean run docker pull run
