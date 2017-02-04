@@ -14,8 +14,8 @@ import:
   version: 5576b8d83ed75cbb4bc43ef18c07414f880b3472
 - package: github.com/jteeuwen/go-pkg-xmlx
   version: cf505b97c711dd1c5a4682f68ea04dd35e385b8f
-- package: github.com/kpashka/slack
-  version: 2d674d97a96cc4a712413109a6bb25796e1262b6
+- package: github.com/nlopes/slack
+  version: b19af7f0a8470c9a010facdf07f15d89d89883c4
 - package: github.com/tucnak/telebot
   version: 40c91ee0b4c635ca2f520c54617306092cabb845
 - package: golang.org/x/net

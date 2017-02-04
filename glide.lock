@@ -1,5 +1,5 @@
-hash: 8e80d6a9c5dfb171181d9716cc10048f38610e31c0405a6034d51b006ea48385
-updated: 2017-01-04T09:58:21.53074628+07:00
+hash: 33c5e5fbe69f4acae564d51b162c190d0ad03ac87b93131563b060dbaa376d79
+updated: 2017-02-04T13:14:56.09271758+07:00
 imports:
 - name: github.com/BurntSushi/toml
   version: 056c9bc7be7190eaa7715723883caffa5f8fa3e4
@@ -11,8 +11,8 @@ imports:
   version: 5576b8d83ed75cbb4bc43ef18c07414f880b3472
 - name: github.com/jteeuwen/go-pkg-xmlx
   version: cf505b97c711dd1c5a4682f68ea04dd35e385b8f
-- name: github.com/kpashka/slack
-  version: 2d674d97a96cc4a712413109a6bb25796e1262b6
+- name: github.com/nlopes/slack
+  version: b19af7f0a8470c9a010facdf07f15d89d89883c4
 - name: github.com/NodePrime/jsonpath
   version: 84403ded544328c99be3472727667179eef23a91
 - name: github.com/Sirupsen/logrus
